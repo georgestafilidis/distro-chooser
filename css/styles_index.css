@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+/* ============================== */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1d2e;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: url(/svg/tux_dark.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* ============================== */
+
+.navbar {
+    align-items: center;
+    background-color: #191724;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar div {
+    width: 33%;
+}
+
+.navbar .home {
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.navbar .navlinks {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.navbar .tools {
+    display: flex;
+    gap: 10px;
+    margin-right: 25px;
+    justify-content: end;
+}
+
+.navlinks a {
+    color: #6e6a86;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    width: 150px;
+}
+
+.navlinks a.active {
+    background-color: #2c283b;
+    border-radius: 9999px;
+    color: #e0def4;
+    font-weight: bold;
+    pointer-events: none;
+    transition: none;
+}
+
+.navbar .navlinks a:hover {
+    background-color: #2c283b;
+    border-radius: 9999px;
+    color: #e0def4;
+}
+
+.material-symbols-rounded {
+    color: #6e6a86;
+    font-size: 24px;
+    padding: 10px 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.material-symbols-rounded:hover {
+    border-radius: 9999px;
+    background-color: #2c283b;
+    color: #e0def4;
+}
+
+.material-symbols-rounded.active {
+    background-color: #2c283b;
+    border-radius: 9999px;
+    color: #e0def4;
+    cursor: default;
+    padding: 10px;
+    transition: none;
+}
+
+/* ============================== */
+
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_content .headline {
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #e0def4;
+    text-align: center;
+    width: 80%;
+}
+
+.hero_content .subheading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a0a0b0;
+    max-width: 600px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cta_button {
+    display: inline-block;
+    background-color: #6e6a86;
+    color: #e0def4;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 36px;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.cta_button:hover {
+    background-color: #e0def4;
+    color: #191724;
+    outline: none;
+}
+
+/* ============================== */
+footer {
+    text-align: center;
+    background-color: #191724;
+    color: #e0def4;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* ============================== */
+
+.light-mode {
+    background-color: #faf4ed;
+    background-image: url(/svg/tux_light.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 500px;
+    background-size: auto;
+    color: #575279;
+}
+
+.light-mode .navbar {
+    background-color: #fffaf3;
+}
+
+.light-mode .navbar .navlinks a {
+    color: #797593;
+}
+
+.light-mode .navbar .navlinks a.active,
+.light-mode .navbar .navlinks a:hover {
+    background-color: #f2e9e1;
+    color: #575279;
+}
+
+.light-mode .material-symbols-rounded {
+    color: #797593;
+}
+
+.light-mode .material-symbols-rounded.active,
+.light-mode .material-symbols-rounded:hover {
+    background-color: #f2e9e1;
+    color: #575279;
+}
+
+.light-mode .hero_content .headline {
+    color: #575279;
+}
+
+.light-mode .hero_content .subheading {
+    color: #9893a5;
+}
+
+.light-mode .cta_button {
+    background-color: #797593;
+    color: #fffaf3;
+}
+
+.light-mode .cta_button:hover {
+    background-color: #575279;
+    color: #faf4ed;
+}
+
+.light-mode footer {
+    background-color: #fffaf3;
+    color: #575279;
+}

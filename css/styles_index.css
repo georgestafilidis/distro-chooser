@@ -11,7 +11,7 @@ body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-image: url("https://github.com/georgestafilidis/images/blob/main/tuxdark.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/georgestafilidis/images/main/tuxdark.png");
     background-repeat: no-repeat;
     background-position: 100% 500px;
     display: flex;
@@ -177,7 +177,7 @@ footer {
 
 .light-mode {
     background-color: #faf4ed;
-    background-image: url("https://github.com/georgestafilidis/images/blob/main/tuxlight.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/georgestafilidis/images/main/tuxlight.png");
     background-repeat: no-repeat;
     background-position: 100% 500px;
     background-size: auto;

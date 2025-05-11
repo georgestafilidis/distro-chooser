@@ -11,7 +11,7 @@ body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-image: url(/svg/tux_dark.svg);
+    background-image: url(./svg/tux_dark.svg);
     background-repeat: no-repeat;
     background-position: 100% 500px;
     display: flex;
@@ -177,7 +177,7 @@ footer {
 
 .light-mode {
     background-color: #faf4ed;
-    background-image: url(/svg/tux_light.svg);
+    background-image: url(./svg/tux_light.svg);
     background-repeat: no-repeat;
     background-position: 100% 500px;
     background-size: auto;
